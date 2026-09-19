@@ -1,0 +1,28 @@
+{
+	"schemaVersion": 1,
+	"id": "pojavhud",
+	"version": "${version}",
+	"name": "PojavHUD",
+	"description": "Customizable Minecraft item texture overlay for hotbar slots. Designed for use with PojavLauncher touchscreen buttons.",
+	"authors": ["PojavHUD"],
+	"contact": {},
+	"license": "MIT",
+	"environment": "client",
+	"entrypoints": {
+		"client": [
+			"com.pojavhud.PojavHudClient"
+		],
+		"modmenu": [
+			"com.pojavhud.ModMenuIntegration"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=0.16.0",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"modmenu": "*"
+	}
+}
